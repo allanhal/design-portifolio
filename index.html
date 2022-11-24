@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Name Lastname</title>
     <style>
+      @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
       body,
       html {
         margin: 0;
         padding: 0;
+        color: white;
+        font-family: "Oswald", sans-serif;
+      }
+      body {
+        background-color: black;
       }
       * {
         box-sizing: border-box;
@@ -23,35 +30,46 @@
         top: 0px;
         left: 0px;
         width: 100%;
-        height: 30px;
-        border: 1px solid red;
+        height: 60px;
         gap: 20px;
-        padding: 0px 20px;
-        background-color: gray;
+        padding: 10px 20px;
+        background-color: black;
+        font-weight: 600;
+      }
+      .menu {
+        font-size: 23px;
       }
       .subtitle {
         position: sticky;
         top: 30px;
-        height: 300px;
+        height: 350px;
         padding: 0px 20px;
         width: 100%;
-        border: 1px solid red;
-        background-color: lightblue;
         z-index: -1;
+        font-size: 75px;
       }
       .grid {
-        background-color: gray;
+        background-color: black;
         z-index: 999999;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 0px;
-        box-shadow: 0px -10px 50px 50px gray;
+        box-shadow: 0px -10px 50px 50px black;
+        padding-bottom: 10vh;
+        gap: 10px;
       }
       .card {
         height: 300px;
-        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
       }
-
+      .card img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
       @media screen and (max-width: 540px) {
         .grid {
           grid-template-columns: 1fr;
@@ -61,23 +79,70 @@
   </head>
   <body>
     <div class="header">
-      <div>Name</div>
-      <div>About</div>
+      <div class="menu">Name</div>
+      <div class="menu">About</div>
     </div>
     <div class="subtitle">
-      <span>Text</span>
+      <span>Hello! I'm Allan — And this is my work. ↓</span>
     </div>
     <div class="grid">
-      <div class="card">card 1</div>
-      <div class="card">card 2</div>
-      <div class="card">card 3</div>
-      <div class="card">card 4</div>
-      <div class="card">card 5</div>
-      <div class="card">card 6</div>
-      <div class="card">card 7</div>
-      <div class="card">card 8</div>
-      <div class="card">card 9</div>
-      <!-- <div class="card">card 10</div> -->
+      <div class="card">
+        <!-- <span class="title">Message</span> -->
+        <img
+          class="img"
+          src="https://picsum.photos/1280/720?random=1"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="card">
+        <img
+          class="img"
+          src="https://picsum.photos/1280/720?random=2"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="card">
+        <img
+          class="img"
+          src="https://picsum.photos/1280/720?random=3"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="card">
+        <img
+          class="img"
+          src="https://picsum.photos/1280/720?random=4"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="card">
+        <img
+          class="img"
+          src="https://picsum.photos/1280/720?random=5"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="card">
+        <img
+          class="img"
+          src="https://picsum.photos/1280/720?random=6"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="card">
+        <img
+          class="img"
+          src="https://picsum.photos/1280/720?random=7"
+          alt=""
+          srcset=""
+        />
+      </div>
     </div>
   </body>
 </html>
